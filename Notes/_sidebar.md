@@ -1,0 +1,2 @@
+- [我的笔记观](/Notes/0000%20我的笔记观.md)
+- [❤️ 老鼠爱发电](https://afdian.net/a/daomishu)

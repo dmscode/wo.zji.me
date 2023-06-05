@@ -27,10 +27,27 @@
       coverpage: 'docs/Cover.md',
       notFoundPage: 'docs/404.md',
       loadSidebar: true,
+      giscus:{
+        repo: "dmscode/wo.zji.me",
+        repoId: "R_kgDOI4bELQ",
+        category: "评论",
+        categoryId: "DIC_kwDOJrY1Y84CW-lK",
+        mapping: "url",
+        reactionsEnabled: "1",
+        strict: "1",
+        emitMetadata: "1",
+        inputPosition: "top",
+        theme: "light",
+        lang: "zh-CN",
+        loading: "lazy"
+      },
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <!-- docsify-mustache 的附加工具，先用它来隐藏 frontmatter -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/front-matter.min.js"></script>
+  <!-- giscus评论  -->
+  <link rel="stylesheet" href="https://unpkg.com/docsify-giscus@1.0.0/dist/giscus.css">
+  <script src="https://unpkg.com/docsify-giscus@1.0.0/dist/docsify-giscus.min.js"></script>
 </body>
 </html>

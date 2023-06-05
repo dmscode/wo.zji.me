@@ -1,3 +1,3 @@
 - [Home](/)
-- [Notes](/Notes)
+- [Notes](/Notes/)
 - [❤️](https://afdian.net/a/daomishu)
