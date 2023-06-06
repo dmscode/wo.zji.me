@@ -1,2 +1,5 @@
-- [我的笔记观](/Notes/0000%20我的笔记观.md)
+- [我的笔记观](/Notes/0000_我的笔记观.md)
+- [我自己的规范](/Notes/0001_我自己的规范.md)
+- [Obsidian 和 Docsify 的配合](/Notes/0002_Obsidian和Docsify的配合.md)
+- [Changelog](/Notes/Changelog.md)
 - [❤️ 老鼠爱发电](https://afdian.net/a/daomishu)
