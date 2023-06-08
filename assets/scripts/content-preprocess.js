@@ -1,9 +1,7 @@
 function handle(content) {
-  console.log(3)
-  console.log(/^(\s*(?:>\s+)?(?:\-|\*)\s+)/g.test(content))
-  return content.replace(/^(\s*(?:>\s+)?[-*]\s+)\[ \] /g, (m, s1, s2)=>{
-    console.log(m, s1, s2);
-    return 123
+  // 移除 front matter，但是不包含侧边栏
+  return content.replace(/^-{3,}\r?\n([\s\S\r\n]*?)-{3,}\r?\n/g, (m, s1)=>{
+    return ''
   })
 }
 

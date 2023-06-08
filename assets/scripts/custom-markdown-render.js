@@ -20,8 +20,10 @@ const todoListMark = {
   'u': '📈',    // 提升
   'd': '📉',    // 下降
 }
+
 window.$docsify.markdown = {
   renderer: {
+    // 任务列表项的特殊标记
     listitem: function(text, isTask, isChecked) {
       if(isTask){
         return `<li>${text.replace(/^\s*<input.*?>/g, ()=>isChecked ? '✅' : '🔲')}</li>`
