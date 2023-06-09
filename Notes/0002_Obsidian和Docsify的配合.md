@@ -1,6 +1,6 @@
 ---
-created: 2023-06-08 08:34:04
-updated: 2023-06-08 08:34:04
+created: 2023-06-08 16:34:04
+updated: 2023-06-09 08:52:27
 ---
 都是基于 Markdown，那就是可以一起用！反正笔记基于 Markdown，所以一切支持 Markdown 的工具都是我的笔记工具。合理~
 
@@ -37,6 +37,8 @@ Docsify 使用 [docsify-mermaid](https://github.com/Leward/mermaid-docsify) 插�
 Obsidian 中被问到最多的功能之一，不是什么标准方法，但是用来突出显示一些内容真的很方便。用这个插件 [docsify-plugin-flexible-alerts](https://github.com/fzankl/docsify-plugin-flexible-alerts) 基本兼容。一些细致问题可以通过自定义解决 。
 
 ## Todo List
+
+>  Change at 2023-06-07
 
 Obsidian 中一些主题支持对待办列表的更多标记，我给 Docsify 也加上了相应的支持，用 Emoji 进行标识，符号基本完全对应。
 

@@ -1,8 +1,14 @@
 ---
-created: 2023-06-05 08:12:28
-updated: 2023-06-08 08:12:28
+created: 2023-06-05 16:12:28
+updated: 2023-06-09 07:53:04
 tags: 
 ---
+
+#### 2023-06-09
+
+- [Obsidian 插件梳理](/Notes/0003_Obsidian插件梳理.md)
+- 解决图片相对路径的问题
+
 #### 2023-06-08
 
 - [Obsidian 和 Docsify 的配合](/Notes/0002_Obsidian和Docsify的配合.md) 中更新了这两天的修改内容

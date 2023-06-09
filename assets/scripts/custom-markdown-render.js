@@ -31,6 +31,10 @@ window.$docsify.markdown = {
       return `<li>${text.replace(/^\[(.|&[a-z]+;)\] /, (m, s)=>{
         return todoListMark[s]+'  '
       })}</li>`
+    },
+    // 解决图片相对路径的问题
+    image: function(href, title) {
+      return `<img src="${href}" alt="${title}">`
     }
   }
 }
