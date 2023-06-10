@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <title>ZJI</title>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
-  <link rel="stylesheet" href="assets/scripts/MyStyle.css">
+  <link rel="stylesheet" href="src/scripts/MyStyle.css">
 </head>
 <body>
   <div id="app"></div>
@@ -17,15 +17,15 @@
       // 自动返回顶部
       auto2top: true,
       // 入口文件改为 /Home.md
-      homepage: 'docs/Home.md',
+      homepage: 'src/pages/Home.md',
       // 顶部板块导航
-      loadNavbar: 'docs/Navs.md',
+      loadNavbar: 'src/pages/Navs.md',
       // 主题色，比如链接啥的
       themeColor: '#EC3C6C',
       // 执行笔记中的第一个 script 标签
       executeScript: true,
-      coverpage: 'docs/Cover.md',
-      notFoundPage: 'docs/404.md',
+      coverpage: 'src/pages/Cover.md',
+      notFoundPage: 'src/pages/404.md',
       loadSidebar: true,
       subMaxLevel: 2,
       relativePath: true,
@@ -46,7 +46,7 @@
     }
   </script>
   <!-- 自定义 Markdown 渲染 -->
-  <script src="/assets/scripts/custom-markdown-render.js"></script>
+  <script src="/src/scripts/custom-markdown-render.js"></script>
   <!-- 主程序 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 
@@ -56,8 +56,8 @@
   <!-- 全文搜索  -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <!-- 引入并运行外部脚本 -->
-  <script src="/assets/scripts/external-script.js"></script>
+  <script src="/src/scripts/external-script.js"></script>
   <!-- 引入并运行外部脚本 -->
-  <script src="/assets/scripts/content-preprocess.js"></script>
+  <script src="/src/scripts/content-preprocess.js"></script>
 </body>
 </html>
