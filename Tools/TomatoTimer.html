@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TomatoTimer</title>
+  <style>
+    @font-face {
+      font-family: Din;
+      src: url(../src/fonts/DIN-Regular-2.otf);
+    }
+    body {
+      display: flex;
+      margin: 0;
+      background-color: #ff787e;
+      color: white;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+      font-family: Din;
+      align-items: center;
+      justify-content: center;
+      line-height: 1em;
+    }
+    #Time {
+      background: linear-gradient(30deg, #114d97, #4ca2e4);
+    }
+    #Tomato {
+      background: linear-gradient(30deg, #f69095, #df575d);
+    }
+    #Rest {
+      background: linear-gradient(30deg, #4b6f07, #a3d742);
+    }
+    #clock {
+      display: flex;
+      opacity: .8;
+      margin: 0;
+      padding-top: .3em;
+      position: relative;
+    }
+    #clock::before {
+      position: absolute;
+      right: 0;
+      top: 0;
+      content: attr(data-desc);
+      font-size: .3em;
+      line-height: 1em;
+    }
+    #Time #min,
+    #Time #sec {
+      cursor: pointer;
+    }
+    #sep {
+      transition: opacity .8s ease-in-out;
+    }
+    #ding { display: none; }
+  </style>
+</head>
+<body id="Time">
+  <div id="clock" data-desc="Time">
+    <span id="min">00</span>
+    <span id="sep">:</span>
+    <span id="sec">00</span>
+  </div>
+  <audio id="ding" src="/src/medias/ding.mp3" preload></audio>
+  <script>
+    /**
+    * 获取网址中的 get 请求参数
+    *
+    * @param {string} key 要查询的参数名称
+    * @param {string} defaultVal 默认值,当未获取到指定参数时返回默认值
+    * @param {string} [url=window.location.search] 输入的网址，默认是当前页面的查询部分。输入的格式和网址查询部分的格式相同（不是完整网址）
+    * @return {*} 
+    */
+    const getQueryVal = (key, defaultVal, url=window.location.search)=>{
+      const searchParams = new URLSearchParams(url)
+      const val = searchParams.get(key)
+      return val ? val : defaultVal
+    }
+    // 获取元素
+    const body = document.body
+    const clock = body.querySelector('#clock')
+    const min = body.querySelector('#min')
+    const sep = body.querySelector('#sep')
+    const sec = body.querySelector('#sec')
+    const ding = body.querySelector('#ding')
+    // 界面尺寸
+    const setFontSize = ()=>{
+      const fontSize = (Math.min(window.innerWidth/3, window.innerHeight*0.6)).toFixed(0)+'px'
+      body.style.fontSize =  fontSize
+    }
+    setFontSize()
+    window.addEventListener('resize', setFontSize)
+    // 当前状态
+    const state = {
+      type: 0,  // 0:Time, 1: Tomato, 2: Rest
+      min: '00',
+      sec: '00',
+      long: Number(getQueryVal('l', 25))*6e4,
+      short: Number(getQueryVal('s', 5))*6e4,
+      endTime: 0  // 计时结束时间戳
+    }
+    window.setInterval(()=>{
+      const now = new Date()
+      state.type ? showTimer(now) : showTime(now)
+      // 冒号闪烁
+      sep.style.opacity = now.getSeconds()%2
+    }, 1000)
+    // 更新当前时间
+    const showTime = now=>{
+      const m = String(now.getHours()).padStart(2, '0')
+      const s = String(now.getMinutes()).padStart(2, '0')
+      changeTime(m, s)
+    }
+    // 更新倒计时
+    const showTimer = now=>{
+      const remainingTime = Math.round((state.endTime-now)/1000)
+      if(remainingTime < 0){
+        ding.play()
+        changeType(0)
+        return
+      }
+      const m = String(Math.floor(remainingTime/60)).padStart(2, '0')
+      const s = String(remainingTime%60).padStart(2, '0')
+      changeTime(m, s)
+    }
+    // 渲染时间变化
+    const changeTime = (m, s)=>{
+      if(state.min !== m){
+        state.min = m
+        min.textContent = m
+      }
+      if(state.sec !== s){
+        state.sec = s
+        sec.textContent = s
+      }
+    }
+    // 修改状态
+    const changeType = type => {
+      state.type = type
+      switch(type){
+        case 1: // Tomato
+          state.endTime = Date.now() + state.long
+          body.id = 'Tomato'
+          clock.dataset.desc = 'Tomato'
+          break
+        case 2: // Rest
+          state.endTime = Date.now() + state.short
+          body.id = 'Rest'
+          clock.dataset.desc = 'Rest'
+          break
+        default:  // Time
+          state.endTime = 0
+          clock.dataset.desc = 'Time'
+          body.id = 'Time'
+      }
+    }
+    min.addEventListener('click', ()=>{ if(!state.type) changeType(1) })
+    sec.addEventListener('click', ()=>{ if(!state.type) changeType(2) })
+  </script>
+</body>
+</html>
