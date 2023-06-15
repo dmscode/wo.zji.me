@@ -35,6 +35,14 @@ https://wo.zji.me/Tools/TomatoTimer.html
 <iframe src="https://wo.zji.me/Tools/TomatoTimer.html" width=100% height=300></iframe>
 ```
 
+### 笔记挂件
+
+使用 [动态挂件](/Notes/0005_动态挂件.md) 方式添加则无需设定宽高。
+
+```html
+<iframe src="https://wo.zji.me/Tools/TomatoTimer.html"></iframe>
+```
+
 ## 高级用法
 
 网址中有两个可选参数：
