@@ -25,7 +25,8 @@
     }
     #progress-text {
       font-size: 5vw;
-      height: 1em;
+      height: 1.2em;
+      cursor: pointer;
     }
     #progress-area {
       border-radius: 8px;
@@ -35,6 +36,7 @@
       overflow: hidden;
       position: relative;
       padding: 4px;
+      cursor: pointer;
     }
     #progress-bar {
       position: relative;
@@ -69,12 +71,15 @@
     const bar = body.querySelector('#progress-bar')
     // 获取参数
     const precision = Number(getQueryVal('l', 2))
+    // 时间间隔，根据精度调整
     const interval = precision ? Math.max(Math.min(Math.floor(365*24*36000/10**precision), 5000), 20) : 5000
+    // 核心部分
+    let Progress = 0
     const getProgress = ()=>{
       const now = new Date()
       const YearStart = new Date(now.getFullYear(), 0, 1)
       const YearEnd = new Date(now.getFullYear()+1, 0, 1)
-      const Progress = (now-YearStart)/(YearEnd-YearStart)
+      Progress = (now-YearStart)/(YearEnd-YearStart)
       const barWidth = Math.round(window.innerWidth*0.92*Progress)+'px'
       if(bar.style.width !== barWidth) bar.style = `width: ${barWidth}`
       const content = `Year Progress: ${(Progress*100).toFixed(precision)}%`
@@ -82,6 +87,13 @@
     }
     getProgress()
     window.setInterval(getProgress, interval)
+    // 点击元素复制内容
+    text.addEventListener('click', ()=>{
+      navigator.clipboard.writeText(text.textContent)
+    })
+    bar.addEventListener('click', ()=>{
+      navigator.clipboard.writeText(text.textContent.replace(': ', `: ${''.padEnd(Math.round(Progress / 0.05), '▓')}${''.padEnd(Math.round((1 - Progress) / 0.05), '░')} `))
+    })
   </script>
 </body>
 </html>
