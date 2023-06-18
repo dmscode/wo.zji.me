@@ -1,4 +1,3 @@
-- [使用方法](/Tools/WidgetUsage.md)
 - [番茄时钟](/Tools/TomatoTimer.md)
 - [年进度条](/Tools/YearProgress.md)
 - [简约时钟](/Tools/Clock.md)
