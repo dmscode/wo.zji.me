@@ -1,4 +1,4 @@
 - [Home](/)
 - [Notes](/Notes/)
 - [Tools](/Tools/)
-- [❤️](https://afdian.net/a/daomishu)
+- <a href="https://afdian.net/a/daomishu" target="_blank" data-umami-event="afdian-nav">❤️</a>
