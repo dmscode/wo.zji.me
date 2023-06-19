@@ -5,4 +5,6 @@
 - [笔记的目录划分](/Notes/0004_笔记的目录划分.md)
 - [动态挂件](/Notes/0005_动态挂件.md)
 - [Changelog](/Notes/Changelog.md)
+- 工作流
+  - [文件同步流](/Notes/Workflow/FileSync.md)
 - [❤️ 老鼠爱发电](https://afdian.net/a/daomishu)
