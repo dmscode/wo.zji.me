@@ -42,6 +42,7 @@
       height: 100%;
       top: 0;
       left: 0;
+      z-index: -1;
     }
     #sec::before {
       content: " ";
@@ -63,11 +64,16 @@
       background-color: rgb(248, 96, 96);
       border-radius: 3.2vmin;
     }
+    #hou,
+    #min,
+    #sep {
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <div id="Clock">
-    <span id="hours">00</span>
+    <span id="hou">00</span>
     <span id="sep">:</span>
     <span id="min">00</span>
     <span id="sec"></span>
@@ -89,14 +95,14 @@
     // 获取元素
     const body = document.body
     const clock = body.querySelector('#Clock')
-    const hours = body.querySelector('#hours')
+    const hou = body.querySelector('#hou')
     const sep = body.querySelector('#sep')
     const min = body.querySelector('#min')
     const sec = body.querySelector('#sec')
 
     // 当前状态
     const state = {
-      hours: '00',
+      hou: '00',
       min: '00'
     }
 
@@ -115,9 +121,9 @@
     }
     // 渲染时间变化
     const changeTime = (h, m)=>{
-      if(state.hours !== h){
-        state.hours = h
-        hours.textContent = h
+      if(state.hou !== h){
+        state.hou = h
+        hou.textContent = h
       }
       if(state.min !== m){
         state.min = m
@@ -126,6 +132,34 @@
     }
     showTime()
     window.setInterval(showTime, 1000)
+
+    const formatOptions = {
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
+      hour12: false,
+    };
+    hou.addEventListener('click', ()=>{
+      navigator.clipboard.writeText(
+        new Date().toLocaleDateString('zh-CN', {year: 'numeric', month: '2-digit', day: '2-digit',}).replace(/\//g, '-')
+      ) 
+    })
+    min.addEventListener('click', ()=>{
+      navigator.clipboard.writeText(
+        new Date().toLocaleTimeString('zh-CN', {timeStyle: 'medium'})
+      ) 
+    })
+    sep.addEventListener('click', ()=>{
+      const now = new Date()
+      navigator.clipboard.writeText(
+        now.toLocaleDateString('zh-CN', {year: 'numeric', month: '2-digit', day: '2-digit',}).replace(/\//g, '-')
+        + ' '
+        + now.toLocaleTimeString('zh-CN', {timeStyle: 'medium'})
+      ) 
+    })
   </script>
   <script async src="https://analytics.umami.is/script.js" data-website-id="11b27899-3df6-4471-8e0e-50eff9625ca6"></script>
 </body>
