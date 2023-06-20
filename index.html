@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="src/scripts/MyStyle.css">
 </head>
+
 <body>
   <div id="app"></div>
   <script>
@@ -29,7 +31,7 @@
       loadSidebar: true,
       subMaxLevel: 2,
       relativePath: true,
-      giscus:{
+      giscus: {
         repo: "dmscode/wo.zji.me",
         repoId: "R_kgDOI4bELQ",
         category: "评论",
@@ -69,6 +71,17 @@
   </script>
   <script src="//unpkg.com/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script>
   <!-- 网站统计 -->
-  <script async src="https://state.zji.me/script.js" data-website-id="542db294-0912-438b-97dc-dbf51748d037"></script>
+  <script
+    async
+    src="https://state.zji.me/script.js"
+    data-website-id="542db294-0912-438b-97dc-dbf51748d037"
+    data-do-not-track="true"
+    data-domains="wo.zji.me"
+    data-auto-track="false">
+  </script>
+  <script>
+    umami.track(props => ({ ...props, url: window.location.hash }));
+  </script>
 </body>
+
 </html>

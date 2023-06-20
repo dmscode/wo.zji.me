@@ -7,4 +7,4 @@
 - [Changelog](/Notes/Changelog.md)
 - 工作流
   - [文件同步流](/Notes/Workflow/FileSync.md)
-- [❤️ 老鼠爱发电](https://afdian.net/a/daomishu)
+- <a href="https://afdian.net/a/daomishu" target="_blank" data-umami-event="afdian-nav">❤️ 老鼠爱发电</a>
