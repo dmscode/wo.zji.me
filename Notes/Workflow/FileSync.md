@@ -1,4 +1,5 @@
 
+如果显示不正常，刷新一下页面就好了
 ```mermaid
 flowchart LR
 %% 笔记本电脑
