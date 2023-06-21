@@ -79,8 +79,10 @@
     data-domains="wo.zji.me"
     data-auto-track="false">
   </script>
-  <script async>
-    window.addEventListener('load', ()=>{ umami.track(props => ({ ...props, url: window.location.hash })) })
+  <script>
+    const sendDate = ()=>{ umami.track(props => ({ ...props, url: window.location.hash })) }
+    window.addEventListener('load', sendDate)
+    window.addEventListener("hashchange", sendDate, false);
   </script>
 </body>
 
