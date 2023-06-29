@@ -7,4 +7,5 @@
 - [Changelog](/Notes/Changelog.md)
 - 工作流
   - [文件同步流](/Notes/Workflow/FileSync.md)
+  - [Android通知处理](/Notes/Workflow/Android通知处理规则.md)
 - <a href="https://afdian.net/a/daomishu" target="_blank" data-umami-event="afdian-nav">❤️ 老鼠爱发电</a>
