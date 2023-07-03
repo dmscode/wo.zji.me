@@ -111,3 +111,64 @@ style Rule fill:#ffa400,color:#FFF
 style Group fill:#ffc773,color:#333
 style Do fill:#057748,color:#FFF
 ```
+
+## 聊天工具别老叫
+
+```mermaid
+flowchart LR
+
+%% 通知来源
+subgraph Apps
+  any["微信QQ"]
+end
+
+%% 通知规则
+subgraph Rule
+  subgraph Group[包含任意]
+
+  end
+end
+
+%% 通知处理
+Do["冷却：此对话-3 分钟内"]
+
+%% 连线
+Apps ---> Rule ---> Do
+
+%% 节点样式
+style Apps fill:#425066,color:#FFF
+style Rule fill:#ffa400,color:#FFF
+style Group fill:#ffc773,color:#333
+style Do fill:#057748,color:#FFF
+```
+
+## 微信消息增强提醒
+
+```mermaid
+flowchart LR
+
+%% 通知来源
+subgraph Apps
+  any[微信]
+end
+
+%% 通知规则
+subgraph Rule
+  subgraph Group[包含任意]
+    %% 特定人的消息
+    1["标题-正则匹配：名字|名字"]
+  end
+end
+
+%% 通知处理
+Do[自定义提醒]
+
+%% 连线
+Apps ---> Rule ---> Do
+
+%% 节点样式
+style Apps fill:#425066,color:#FFF
+style Rule fill:#ffa400,color:#FFF
+style Group fill:#ffc773,color:#333
+style Do fill:#057748,color:#FFF
+```
