@@ -11,3 +11,4 @@
 
 -  [笔记统计](/Notes/Snippets/Dataview/笔记统计)
 - [局部注入样式](/Notes/Snippets/Dataview/局部注入样式)
+- [杂志起始页](/Notes/Snippets/Dataview/杂志起始页)

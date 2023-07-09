@@ -3,6 +3,11 @@ created: 2023-06-05 16:12:28
 updated: 2023-06-09 07:53:04
 tags: 
 ---
+### 2023-07-09
+
+- [Dataview](/Notes/Snippets/Dataview/) 添加 [杂志起始页](/Notes/Snippets/Dataview/杂志起始页)
+- [自由度](/Notes/0006_自由度.md)
+
 ### 2023-07-07
 
 - [Dataview](/Notes/Snippets/Dataview/) 添加 [局部注入样式](/Notes/Snippets/Dataview/局部注入样式)
