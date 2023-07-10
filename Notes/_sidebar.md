@@ -5,6 +5,7 @@
 - [笔记的目录划分](/Notes/0004_笔记的目录划分.md)
 - [动态挂件](/Notes/0005_动态挂件.md)
 - [自由度](/Notes/0006_自由度.md)
+- [任务管理](/Notes/0007_任务管理.md)
 - [Changelog](/Notes/Changelog.md)
 - 工作流
   - [文件同步流](/Notes/Workflow/FileSync.md)
