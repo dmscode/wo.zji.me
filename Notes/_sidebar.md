@@ -1,3 +1,7 @@
+---
+created: 2023-07-31 09:41:32
+updated: 2023-07-31 09:41:32
+---
 - [我的笔记观](/Notes/0000_我的笔记观.md)
 - [我自己的规范](/Notes/0001_我自己的规范.md)
 - [Obsidian 和 Docsify 的配合](/Notes/0002_Obsidian和Docsify的配合.md)
@@ -6,6 +10,7 @@
 - [动态挂件](/Notes/0005_动态挂件.md)
 - [自由度](/Notes/0006_自由度.md)
 - [任务管理](/Notes/0007_任务管理.md)
+- [组织笔记](/Notes/0008_组织笔记.md)
 - [Changelog](/Notes/Changelog.md)
 - 工作流
   - [文件同步流](/Notes/Workflow/FileSync.md)
