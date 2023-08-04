@@ -1,8 +1,12 @@
 ---
-created: 2023-06-06 08:12:28
-updated: 2023-07-31 09:42:57
+created: 2023-06-06 16:12:28
+updated: 2023-08-04 06:30:54
 tags: 
 ---
+### 2023-08-04
+
+- [碎碎念](/Notes/0009_碎碎念.md)
+- [小挂件](/Notes/0010_小挂件.md)
 
 ### 2023-07-31
 
@@ -18,12 +22,12 @@ tags:
 
 ### 2023-07-09
 
-- [Dataview](/Notes/Snippets/Dataview/) 添加 [杂志起始页](/Notes/Snippets/Dataview/杂志起始页)
+- [Dataview](/Snippets/Dataview/) 添加 [杂志起始页](/Snippets/Dataview/杂志起始页)
 - [自由度](/Notes/0006_自由度.md)
 
 ### 2023-07-07
 
-- [Dataview](/Notes/Snippets/Dataview/) 添加 [局部注入样式](/Notes/Snippets/Dataview/局部注入样式)
+- [Dataview](/Snippets/Dataview/) 添加 [局部注入样式](/Snippets/Dataview/局部注入样式)
 
 ### 2023-07-06
 
@@ -31,11 +35,11 @@ tags:
 
 ### 2023-06-29
 
-- [Android通知处理](/Notes/Workflow/Android通知处理规则.md)
+- [Android通知处理](/Workflow/Android通知处理规则.md)
 
 #### 2023-06-19
 
-- [文件同步流](/Notes/Workflow/FileSync.md) 注：工作流部分可能未来单独板块
+- [文件同步流](/Workflow/FileSync.md) 注：工作流部分可能未来单独板块
 
 #### 2023-06-15
 

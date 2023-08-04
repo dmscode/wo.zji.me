@@ -1,6 +1,6 @@
 ---
-created: 2023-07-31 09:41:32
-updated: 2023-07-31 09:41:32
+created: 2023-07-31 17:41:32
+updated: 2023-08-04 06:30:54
 ---
 - [我的笔记观](/Notes/0000_我的笔记观.md)
 - [我自己的规范](/Notes/0001_我自己的规范.md)
@@ -11,10 +11,12 @@ updated: 2023-07-31 09:41:32
 - [自由度](/Notes/0006_自由度.md)
 - [任务管理](/Notes/0007_任务管理.md)
 - [组织笔记](/Notes/0008_组织笔记.md)
-- [Changelog](/Notes/Changelog.md)
+- [碎碎念](/Notes/0009_碎碎念.md)
+- [小挂件](/Notes/0010_小挂件.md)
+- [Changelog](/Notes/_changelog.md)
 - 工作流
-  - [文件同步流](/Notes/Workflow/FileSync.md)
-  - [Android通知处理](/Notes/Workflow/Android通知处理规则.md)
+  - [文件同步流](/Workflow/FileSync.md)
+  - [Android通知处理](/Workflow/Android通知处理规则.md)
 - Snippets
-  - [Dataview](/Notes/Snippets/Dataview/)
+  - [Dataview](/Snippets/Dataview/)
 - <a href="https://afdian.net/a/daomishu" target="_blank" data-umami-event="afdian-nav">❤️ 老鼠爱发电</a>
