@@ -1,6 +1,6 @@
 ---
-created: 2023-06-05 14:38:04
-updated: 2023-06-08 08:11:11
+created: 2023-06-05 22:38:04
+updated: 2023-08-05 19:06:20
 tags: 
 ---
 
@@ -10,5 +10,5 @@ tags:
   - 顶部导航是板块的划分
   - 而侧边栏是板块内容的导航
 - ### 资瓷一下啦 ~
-  - <a href="https://afdian.net/a/daomishu" target="_blank" data-umami-event="afdian-img"><img src="src/images/afdian.png"></a>
+  - <a href="https://afdian.net/a/daomishu" target="_blank" data-umami-event="afdian-img"><img src="Resource/images/afdian.png"></a>
   - （可以扫码，也可以点击的哦~）
