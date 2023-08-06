@@ -11,19 +11,11 @@
 </head>
 
 <body>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/Notes/">Notes</a>
-    <a href="/Tools/">Tools</a>
-    <a href="/List/">List</a>
-    <a href="https://afdian.net/a/daomishu" target="_blank" data-umami-event="afdian-nav">❤️</a>
-  </nav>
   <div id="app"></div>
   <script>
     window.$docsify = {
       el: '#app',
       name: 'ZJI',
-      nameLink: '/',
       // 自动返回顶部
       auto2top: true,
       // 顶部板块导航
@@ -37,13 +29,12 @@
       loadSidebar: true,
       subMaxLevel: 3,
       relativePath: true,
-      routerMode: 'history',
       giscus: {
         repo: "dmscode/wo.zji.me",
         repoId: "R_kgDOI4bELQ",
         category: "评论",
         categoryId: "DIC_kwDOJrY1Y84CW-lK",
-        mapping: "pathname",
+        mapping: "url",
         reactionsEnabled: "1",
         strict: "1",
         emitMetadata: "1",
@@ -85,6 +76,11 @@
     data-do-not-track="true"
     data-domains="wo.zji.me"
     data-auto-track="false">
+  </script>
+  <script>
+    const sendDate = ()=>{ umami.track(props => ({ ...props, url: window.location.hash })) }
+    window.addEventListener('load', sendDate)
+    window.addEventListener("hashchange", sendDate, false);
   </script>
 </body>
 
