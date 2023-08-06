@@ -15,7 +15,7 @@ updated: 2023-08-06 16:17:44
 ### 标签说明：
 
 - `#FullPlatform` 代表 Windows、Mac、Linux、Android、iOS 下均可使用
-- `#Copmuter` 代表 Windows、Mac、Linux 下均可使用
+- `#Computer` 代表 Windows、Mac、Linux 下均可使用
 - `#Paid` 代表收费软件
 
 ### 关于设备
@@ -40,10 +40,10 @@ updated: 2023-08-06 16:17:44
 - **编辑器**
   - [Visual Studio Code](https://code.visualstudio.com/) 微软出品，强大，简单，一般需求用它都够了。 #Computer #Web
   - [Sublime Text](https://www.sublimetext.com/3) 很强大的编辑器，收费软件。 #Computer #Paid
-  - [vim](https://www.vim.org/) 知名的命令行编辑器，侧重命令，可以全键盘操控。 #Copmuter
+  - [vim](https://www.vim.org/) 知名的命令行编辑器，侧重命令，可以全键盘操控。 #Computer 
     - [Neovim](https://neovim.io/) Vim 的一个流行分支。
     - [SpaceVim](https://spacevim.org/) Vim 的一个流行分支。
-  - [Emacs](https://www.gnu.org/software/emacs/) 知名编辑器，侧重快捷键，其 [Org mode](https://orgmode.org/) 是非常优秀的笔记形式。 #Copmuter
+  - [Emacs](https://www.gnu.org/software/emacs/) 知名编辑器，侧重快捷键，其 [Org mode](https://orgmode.org/) 是非常优秀的笔记形式。 #Computer 
   - [Notepad++](https://notepad-plus-plus.org/) 很不错很小巧的编辑器，作者中国台湾人 #Windows 
   - [EmEditor](https://www.emeditor.com/) 很强大、小巧的编辑器，历史悠久。 #Windows #Paid
   - [EditPlus](https://www.editplus.com/) 很强大、小巧的编辑器，历史悠久。 #Windows #Paid
@@ -62,4 +62,6 @@ updated: 2023-08-06 16:17:44
 - **媒体**
   - [Potplayer](https://potplayer.tv/) 简单易用又十分强大的播放器，不过目前被加入了广告，虽然不明显。 #Windows 
   - [VLC](https://www.videolan.org/vlc/) 功能强大的播放器，但是界面朴素。 #FullPlatform
+  - [mpv](https://mpv.io/) 据说很强大的播放器，但我调教不出来，一直用不习惯。有各种修改版可供选择。 #Computer 
   - [NewPipe](https://newpipe.net/) Youtube  的第三方下载工具，支持订阅（无需登录） #Android #OpenSource
+  - [youtube-dl](https://github.com/ytdl-org/youtube-dl) 命令行的在线视频下载工具，有很多基于它的 GUI 版本。 #Computer
