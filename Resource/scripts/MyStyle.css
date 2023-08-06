@@ -1,0 +1,4 @@
+body > nav > hr,
+body > nav > p {
+  display: none;
+}
