@@ -1,6 +1,6 @@
 ---
-created: 2023-08-06 11:10:57
-updated: 2023-08-06 16:17:44
+created: 2023-08-07 03:10:57
+updated: 2023-08-07 20:18:21
 ---
 
 有一些软件很好，但是使用频率非常低，或者暂时用不上，然后就记不住了，所以用列表记录一下。
@@ -25,7 +25,7 @@ updated: 2023-08-06 16:17:44
 ## 软件
 
 - **浏览器**
-  - [Chrome](https://www.google.com/chrome/) 当前浏览器的事实王者，很多浏览器都是基于它的开源项目打造的（https://www.chromium.org/getting-involved/download-chromium/） #FullPlatform
+  - [Chrome](https://www.google.com/chrome/) 当前浏览器的事实王者，很多浏览器都是基于它的开源项目打造的 [Chromiu](https://www.chromium.org/getting-involved/download-chromium/) #FullPlatform
   - [Edge](https://www.microsoft.com/edge) 微软的新浏览器，和系统捆绑强推，相比 Chrome 增加了许多实用功能，但也强制塞给了用户许多用不上的功能。 #FullPlatform
   - [Firefox](https://www.mozilla.org/firefox/)大名鼎鼎的火狐，因为开源，有很多衍生版，很不错。定制性非常强，但是受到 Chrome 冲击，用户更少了。 #FullPlatform #OpenSource
   - [Opera](https://www.opera.com/) 浏览器界的先驱者，很多现在觉得习以为常的功能都是由它发明启用的。非常小众，被 360 收购之后变得更加低调无声。 #FullPlatform
@@ -51,6 +51,7 @@ updated: 2023-08-06 16:17:44
   - [Typora](https://typora.io/) 个人以为在可视化编辑的体验目前无出其右。 #Computer
 - **笔记**
   - [Obsidian](https://obsidian.md/) 基于 Markdown 文件的笔记软件，用户自由度非常高。 #FullPlatform
+  - [Logseq](https://logseq.com/) 基于数据库的笔记软件，开源。 #FullPlatform #OpenSource
 - **下载**
   - [IDM](https://www.internetdownloadmanager.com/) 知名下载器，唯一的缺点是收费。 #Windows #Paid 
   - [FDM](https://www.freedownloadmanager.org/) 免费下载器。 #Computer #Android
@@ -59,9 +60,21 @@ updated: 2023-08-06 16:17:44
     - [AriaNg](https://github.com/mayswind/AriaNg) Aria2 的 Web GUI。
     - [Aria2e](https://www.aria2e.com/) Aria2 的管理扩展，基于 AriaNg。 #Chrome
   - [ADM](https://advancedapp.kz/)  Android 下的一款强大的下载工具。 #Android
+- **同步**
+  - [GoodSync](https://www.goodsync.com/) 功能非常完善的同步软件，唯一的缺点是收费，现在还是订阅制。 #FullPlatform #Paid 
+  - [FreeFileSync](https://freefilesync.org/) 很多时候被当做上面的免费替代品，其实功能差距很明显，优点是免费。 #Computer 
+  - [Syncthing](https://syncthing.net/) 设备间文件同步工具，命令行，有 WebUI。 #Computer #Android
+  - [Rclone](https://rclone.org/) 可以将各种存储设备映射为本地磁盘，也可以在其间进行同步。 #Computer
 - **媒体**
   - [Potplayer](https://potplayer.tv/) 简单易用又十分强大的播放器，不过目前被加入了广告，虽然不明显。 #Windows 
   - [VLC](https://www.videolan.org/vlc/) 功能强大的播放器，但是界面朴素。 #FullPlatform
   - [mpv](https://mpv.io/) 据说很强大的播放器，但我调教不出来，一直用不习惯。有各种修改版可供选择。 #Computer 
   - [NewPipe](https://newpipe.net/) Youtube  的第三方下载工具，支持订阅（无需登录） #Android #OpenSource
   - [youtube-dl](https://github.com/ytdl-org/youtube-dl) 命令行的在线视频下载工具，有很多基于它的 GUI 版本。 #Computer
+- **阅读**
+  - [阅读](https://gedoor.github.io/) 自添加源的网络小说阅读器，也可以用来听有声书，看漫画。 #Android #OpenSource
+  - [墨阅](https://www.coolapk.com/apk/com.mxc.offline_all) 一款稍后阅读软件，也可以用作剪藏。 #Android 
+  - [Calibre](http://calibre-ebook.com/) 强大的老牌电子书管理转换软件。 #FullPlatform
+- **Chrome 扩展**
+- **VS Code 插件**
+- **Obsidian 插件**
