@@ -75,7 +75,14 @@ updated: 2023-08-08 06:58:44
 - [GoodSync](https://www.goodsync.com/) 功能非常完善的同步软件，唯一的缺点是收费，现在还是订阅制。 #FullPlatform #Paid 
 - [FreeFileSync](https://freefilesync.org/) 很多时候被当做上面的免费替代品，其实功能差距很明显，优点是免费。 #Computer 
 - [Syncthing](https://syncthing.net/) 设备间文件同步工具，命令行，有 WebUI。 #Computer #Android
+
+### 存储映射
+
+- [AList](https://alist.nn.ci/) 映射各种存储，无同步功能，但可以引用各种下载程序（aria2、qBittorrent），WebUI，可提供 webdav 服务。 #Computer 
 - [Rclone](https://rclone.org/) 可以将各种存储设备映射为本地磁盘，也可以在其间进行同步。 #Computer
+- [RaiDrive](https://www.raidrive.com/) 将各种网络存储映射为本地磁盘，不过现在收费了。 #Computer #Paid
+- [Mountain Duck](https://mountainduck.io/) 将各种网络存储映射为本地磁盘，收费。 #Windows #Mac #Paid
+
 
 ### 媒体
 
@@ -103,6 +110,8 @@ updated: 2023-08-08 06:58:44
 - [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/) 微软小工具集，很实用，安装体积大，但是运行资源占用并不高。 #Windows 
 - [uTools](https://u.tools/) 搜索框式快速启动工具，支持插件，可以做的事情非常多。高级功能需购买会员。 #Windows #Paid
 - [Listary](https://www.listary.com/) 搜索框式快速启动工具，有时候很久不更新。高级版收费。 #Windows #Paid
+- [Capsicain](https://github.com/cajhin/capsicain) 驱动级键盘映射工具。 #Windows 
+- [AutoHotkey](https://www.autohotkey.com/) 一种编程语言，可以非常简单的进行键盘映射，宏编写等。 #Windows 
 
 ### Chrome 扩展
 
