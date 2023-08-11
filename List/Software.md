@@ -112,6 +112,7 @@ updated: 2023-08-08 06:58:44
 - [Listary](https://www.listary.com/) 搜索框式快速启动工具，有时候很久不更新。高级版收费。 #Windows #Paid
 - [Capsicain](https://github.com/cajhin/capsicain) 驱动级键盘映射工具。 #Windows 
 - [AutoHotkey](https://www.autohotkey.com/) 一种编程语言，可以非常简单的进行键盘映射，宏编写等。 #Windows 
+- [Everything](https://www.voidtools.com/support/everything) 速度超快的全盘文件搜索工具。 #Windows 
 
 ### Chrome 扩展
 

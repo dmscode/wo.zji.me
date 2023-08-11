@@ -2,3 +2,14 @@ body > nav > hr,
 body > nav > p {
   display: none;
 }
+.markdown-section > .meta-data {
+  font-size: .8rem;
+  color: #AAAAAF;
+  text-align: right;
+  border-top: 1px dashed #AAAAAF;
+  padding: 1rem;
+}
+.markdown-section > .meta-data > span {
+  display: inline-block;
+  padding: 0 1rem;
+}

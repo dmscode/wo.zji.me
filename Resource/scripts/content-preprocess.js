@@ -1,8 +1,19 @@
 function FMHandle(content) {
-  // 移除 front matter，但是不包含侧边栏
-  return content.replace(/^-{3,}\r?\n([\s\S\r\n]*?)-{3,}\r?\n/g, (m, s1)=>{
+  const FMArr = []
+  // 从 front matter 提取需要的数据
+  content = content.replace(/^-{3,}\r?\n([\s\S\r\n]*?)-{3,}\r?\n/g, (m, s1)=>{
+    s1.split(/\s*\n\s*/g).forEach(t=>{
+      if(/^(created|updated):/i.test(t)) FMArr.push(t)
+    })
     return ''
   })
+  console.log(content)
+
+  return content+(FMArr.length ? `
+  
+  <div class="meta-data">
+    ${FMArr.map(t=>`<span>${t}</span>`).join('\n')}
+  </div>` : '')
 }
 // 因为无法用 hook 直接影响侧边栏内容，所以在每次 跳转后查找删除元素
 function FMSideHandle(){
