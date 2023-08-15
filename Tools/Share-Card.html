@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share-Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css" integrity="sha512-Ya9H+OPj8NgcQk34nCrbehaA0atbzGdZCI2uCbqVRELgnlrh8vQ2INMnkadVMSniC54HChLIh5htabVuKJww8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css" integrity="sha512-Jk4AqjWsdSzSWCSuQTfYRIF84Rq/eV0G2+tu07byYwHcbTGfdmLrHjUSwvzp5HvbiqK4ibmNwdcG49Y5RGYPTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    html {
+      font-size: 24px;
+    }
+    body {
+      background: linear-gradient(30deg, #f6a2de 0%,#90b4f4 100%);
+      margin: 0;
+      min-height: 100vh;
+      padding: 1px;
+      box-sizing: border-box;
+    }
+    main {
+      width: 600px;
+      max-width: 100%;
+      margin: 2rem auto;
+    }
+    main > *,
+    #input > * {
+      box-sizing: border-box;
+    }
+    #input > #content,
+    #input > #toImage,
+    .markdown-body {
+      width: 100%;
+      margin: 1rem auto;
+      background: linear-gradient(30deg, #ffd6f3 0%,#bfd3f6 100%);
+      border-radius: 18px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, .3);
+      padding: 2rem 2rem;
+      color: rgb(36, 36, 42);
+      font-size: 1rem;
+      line-height: 1.8rem;
+      text-align: justify;
+    }
+    #input {
+      width: 100%;
+    }
+    #input > * {
+      display: block;
+    }
+    #input > #content {
+      resize: vertical;
+    }
+    #input > #toImage,
+    #input > #edit {
+      padding: 0;
+      text-align: center;
+      background: linear-gradient(30deg, #f6a2de 0%,#90b4f4 100%);
+      cursor: pointer;
+    }
+    .markdown-body h1,
+    .markdown-body h2 {
+      border: none;
+    }
+    main > h1,
+    main > footer,
+    .markdown-body h1 {
+      text-align: center;
+    }
+    .markdown-body p {
+      text-indent: 2rem;
+    }
+    .markdown-body pre {
+      background: #282c34;
+    }
+    .markdown-body > .note-footer {
+      font-size: .6rem;
+      line-height: 1rem;
+      text-align: right;
+    }
+    #edit {
+      display: block;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, .3);
+      margin: 1rem auto;
+      font-size: 1rem;
+      line-height: 1rem;
+      text-align: center;
+      background: linear-gradient(30deg, #f6a2de 0%,#90b4f4 100%);
+      cursor: pointer;
+    }
+    #image {
+      margin: 36px auto;
+      text-align: center;
+    }
+    .hide {
+      display: none !important;
+    }
+    footer {
+      text-align: center;
+      font-size: .4rem;
+      color: rgba(64, 64, 64, .8);
+    }
+    footer a {
+      color: rgba(64, 64, 64, .8);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Share image note.</h1>
+    <div id="input">
+      <textarea id="content" placeholder="Some Content"></textarea>
+      <input id="toImage" type="button" value="To Image">
+    </div>
+    <div id="render" class="markdown-body hide"></div>
+    <input id="edit" class="hide" type="button" value="<">
+    <div id="image" class="hide"></div>
+  </main>
+  <footer><a href="https://wo.zji.me/">wo.zji.me</a></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/7.0.3/marked.min.js" integrity="sha512-5U4fEcaG5g1Rb4Xt+iQZvbDSdLtKporWT1U+fHmeKV/ojXw7PK62+wIPjD4VKTPo3THsMIvstrrrs8hbEF1vBw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js" integrity="sha512-rdhY3cbXURo13l/WU9VlaRyaIYeJ/KBakckXIvJNAQde8DgpOmE+eZf7ha4vdqVjTtwQt69bD2wH2LXob/LB7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    /**
+    * 获取网址中的 get 请求参数
+    *
+    * @param {string} key 要查询的参数名称
+    * @param {string} defaultVal 默认值,当未获取到指定参数时返回默认值
+    * @param {string} [url=window.location.search] 输入的网址，默认是当前页面的查询部分。输入的格式和网址查询部分的格式相同（不是完整网址）
+    * @return {*} 
+    */
+    const getQueryVal = (key, defaultVal, url=window.location.search)=>{
+      const searchParams = new URLSearchParams(url)
+      const val = searchParams.get(key)
+      return val ? val : defaultVal
+    }
+    /* 内容元素 */
+    const inputEl   = document.querySelector('#input')    // 输入元素容器
+    const contentEl = document.querySelector('#content')  // 内容输入框
+    const toImageEl = document.querySelector('#toImage')  // 转换按钮
+    const mainEl    = document.querySelector('main')      // Main 元素
+    const renderEl  = document.querySelector('#render')   // Markdown 渲染到 HTML 的容器
+    const imageEl   = document.querySelector('#image')    // 生成图片的容器
+    const editEl    = document.querySelector('#edit')     // 返回编辑按钮
+    /* 全局变量 */
+    const data = {
+      content: decodeURIComponent(getQueryVal('content', '')),
+      author:  decodeURIComponent(getQueryVal('author', '')),
+      time:    decodeURIComponent(getQueryVal('time', '')),
+      width:   +getQueryVal('width', 0),
+    }
+    /**
+    * 生成图片
+    */
+    const renderPicture = ()=>{
+      /* 无内容则无动作 */
+      if(!data.content) return
+      /* 为内容附加元数据 */
+      /* 代码解析 */
+      renderEl.innerHTML = marked.parse(data.content) // Markdown to HTML
+                         + `<div class="note-footer">
+                              ${data.author ? `<div class="note-footer-line">By ${data.author}</div>` : ''}
+                              <div class="note-footer-line">On ${data.time ? data.time : new Date().toLocaleString()}</div>
+                            </div>`
+      hljs.highlightAll()                        // 代码高亮
+      /* 切换元素 */
+      renderEl.classList.remove('hide') // 显示代码渲染区，以便生成图片
+      inputEl.classList.add('hide')     // 隐藏输入区
+      /* 生成图片 */
+      html2canvas(renderEl, {
+        backgroundColor: 'rgba(0, 0, 0, 0)' // 背景透明
+      }).then(function(canvas) {
+        renderEl.classList.add('hide')   // 隐藏代码渲染区
+        imageEl.innerHTML = ''           // 清空图片区
+        imageEl.appendChild(canvas);     // 插入图片（画布）
+        imageEl.classList.remove('hide') // 显示图片区
+        editEl.classList.remove('hide')  // 显示返回编辑按钮
+      });
+      /* 修改网页地址 */
+      window.history.pushState({}, '', window.location.href.replace(/(\?|&)content=[^&]*/, `$1content=${encodeURIComponent(data.content)}`))
+    }
+    /* 元素初始化 */
+    if(data.width) mainEl.style = `width: ${data.width}px; min-width: auto; max-width: auto`
+    /* ==== 事件绑定 ==== */
+    /* 确保样式加载完成之后再开始渲染 */
+    window.addEventListener('load', ()=>{
+      /* 如果有来自网址的数据则直接渲染 */
+      if(data.content){
+        contentEl.value = data.content  // 将网址内容设定到编辑框
+        renderPicture()
+      }
+    })
+    /* 绑定渲染按钮事件 */
+    toImageEl.addEventListener('click', ()=>{
+      data.content = contentEl.value  // 将编辑框数据存入内容
+      renderPicture()
+    })
+    /* 绑定返回编辑按钮事件 */
+    editEl.addEventListener('click', ()=>{
+      inputEl.classList.remove('hide')  // 显示输入元素元素
+      imageEl.classList.add('hide')     // 隐藏图片区
+      editEl.classList.add('hide')      // 隐藏编辑按钮
+    })
+  </script>
+</body>
+</html>
