@@ -7,7 +7,6 @@ function FMHandle(content) {
     })
     return ''
   })
-  console.log(content)
 
   return content+(FMArr.length ? `
   

@@ -34,6 +34,15 @@ window.$docsify.markdown = {
     },
     // 解决图片相对路径的问题
     image: function(href, title) {
+      const hashPath = window.location.hash.replace(/^#|\/[^/]*$/g, '')+'/'
+      // 如果是相对路径，并且是相对于当前页面
+      if(/^\.\//.test(href)) href = href.replace(/^\.\//, hashPath)
+      // 如果是相对路径，并且不是相对于当前页面
+      if(/^\.\.\//.test(href)){
+        const upTimes = href.match(/\.\.\//g).length
+        const reg = new RegExp(`([^/]+\/){${upTimes}}$`)
+        href = hashPath.replace(reg, '')+href.replace(/\.\.\//g, '')
+      }
       return `<img src="${href}" alt="${title}">`
     }
   }

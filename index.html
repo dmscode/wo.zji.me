@@ -19,14 +19,19 @@
       // 自动返回顶部
       auto2top: true,
       // 顶部板块导航
-      loadNavbar: true,
+      loadNavbar: 'Resource/pages/Nav.md',
+      // 侧边栏导航
+      loadSidebar: 'Resource/pages/Summary.md',
+      // 404 页面
+      notFoundPage: 'Resource/pages/404.md',
+      // 侧边栏显示层级，由侧边栏折叠插件实现
+      sidebarDisplayLevel: 0,
       // 主题色，比如链接啥的
       themeColor: '#EC3C6C',
       // 执行笔记中的第一个 script 标签
       executeScript: true,
-      coverpage: true,
+      coverpage: 'Resource/pages/Cover.md',
       notFoundPage: true,
-      loadSidebar: true,
       subMaxLevel: 3,
       relativePath: true,
     }
@@ -43,6 +48,9 @@
   <script src="/Resource/scripts/content-preprocess.js"></script>
   <!-- 复制代码到剪切板 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <!-- 侧边栏折叠 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
   <!-- Mermaid.js -->
   <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
