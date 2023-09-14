@@ -1,3 +1,7 @@
+---
+created: 2023-06-19 15:24:44
+updated: 2023-09-14 14:58:19
+---
 
 如果显示不正常，刷新一下页面就好了
 ```mermaid
@@ -6,6 +10,7 @@ flowchart LR
 subgraph NoteBook[Computer]
   subgraph NotObs[Obsidian]
     NotZJI[wo.zji.me]
+    NotWid[Widgets]
   end
   NotShare[ShareFolder]
   NotEnpass[Enpass]
@@ -18,7 +23,9 @@ subgraph Nas[Nas]
     NasEnpass[Enpass]
   end
   subgraph Web[Web]
-    NasZJI[wo.zji.me]
+    subgraph NasZJI[wo.zji.me]
+      NasWid[Widgets]
+    end
   end
 end
 %% Clouds
@@ -47,7 +54,7 @@ PhoObs <--->|Syncthing| NasObs
 
 NotShare <--->|Syncthing| PhoShare
 
-NotZJI --->|Syncthing| NasZJI
+NotZJI --->|"Syncthing (Not include Widgets)"| NasZJI
 
 NasZJI --->|AutoPushGit.js| GitZJI
 NasObs --->|AutoPushGit.js| GitObs
@@ -57,6 +64,8 @@ PhoEnpass <--->|Webdav| NasEnpass
 
 NasApps --->|GoodSync| OneApps
 NasApps --->|GoodSync| InfApps
+
+NotWid --->|Syncthing| NasWid
 
 %% 节点样式
 style NoteBook fill:#c2ccd0,color:#FFF
@@ -84,6 +93,7 @@ linkStyle 1 stroke:#0891d1,stroke-width:4px,color:#0891d1
 linkStyle 2 stroke:#0891d1,stroke-width:4px,color:#0891d1
 linkStyle 3 stroke:#0891d1,stroke-width:4px,color:#0891d1
 linkStyle 4 stroke:#0891d1,stroke-width:4px,color:#0891d1
+linkStyle 11 stroke:#0891d1,stroke-width:4px,color:#0891d1
 
 %% AutoPushGit.js 线条
 linkStyle 5 stroke:#057748,stroke-width:4px,color:#057748

@@ -1,6 +1,6 @@
 ---
 created: 2023-06-05 22:38:04
-updated: 2023-09-14 09:08:15
+updated: 2023-09-14 14:49:40
 tags: 
 ---
 - [Notes](/Notes/)
@@ -15,6 +15,7 @@ tags:
   - [组织笔记](/Notes/0008_组织笔记.md)
   - [碎碎念](/Notes/0009_碎碎念.md)
   - [小挂件](/Notes/0010_小挂件.md)
+  - [遇见 Syncthing](/Notes/0011_遇见Syncthing.md)
 - Lists
   - [软件列表](/List/Software.md)
 - [Tools](/Tools/)
