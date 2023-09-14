@@ -1,7 +1,3 @@
-body > nav > hr,
-body > nav > p {
-  display: none;
-}
 .markdown-section > .meta-data {
   font-size: .8rem;
   color: #AAAAAF;

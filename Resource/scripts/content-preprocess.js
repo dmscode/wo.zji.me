@@ -9,14 +9,20 @@ function FMHandle(content) {
   })
 
   return content+(FMArr.length ? `
-  
-  <div class="meta-data">
-    ${FMArr.map(t=>`<span>${t}</span>`).join('\n')}
-  </div>` : '')
+
+<div class="meta-data">
+  ${FMArr.map(t=>`<span>${t}</span>`).join('\n  ')}
+</div>` : '')
 }
-// 因为无法用 hook 直接影响侧边栏内容，所以在每次 跳转后查找删除元素
-function FMSideHandle(){
-  const els = document.body.querySelectorAll('aside.sidebar > .sidebar-nav > *')
+// 因为无法用 hook 直接影响侧边栏、导航栏、封面内容，所以在每次跳转后查找删除元素
+/**
+ * 删除 FrontMatter
+ *
+ * @param {string} selector 选择器
+ */
+const removeFM = (selector) => {
+  const els = document.body.querySelectorAll(selector)
+  if(!els?.length) return
   if(els[0].tagName==='HR'){
     let hrCount = 0
     els.forEach((el, i)=>{
@@ -26,8 +32,16 @@ function FMSideHandle(){
     })
   }
 }
+function FMRemoveHandle(){
+  // 删除侧边栏中的元数据
+  removeFM('aside.sidebar > .sidebar-nav > *')
+  // 删除导航栏中的元数据
+  removeFM('body > nav > *')
+  // 删除封面内容中的元数据
+  removeFM('.cover-main > *')
+}
 
 window.$docsify.plugins = [].concat(function (hook) {
   hook.beforeEach(FMHandle);
-  hook.doneEach(FMSideHandle)
+  hook.doneEach(FMRemoveHandle)
 }, window.$docsify.plugins);

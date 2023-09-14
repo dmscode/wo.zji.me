@@ -1,6 +1,6 @@
 ---
 created: 2023-08-07 11:10:57
-updated: 2023-08-08 06:58:44
+updated: 2023-09-14 19:54:48
 ---
 
 有一些软件很好，但是使用频率非常低，或者暂时用不上，然后就记不住了，所以用列表记录一下。
@@ -83,6 +83,11 @@ updated: 2023-08-08 06:58:44
 - [RaiDrive](https://www.raidrive.com/) 将各种网络存储映射为本地磁盘，不过现在收费了。 #Computer #Paid
 - [Mountain Duck](https://mountainduck.io/) 将各种网络存储映射为本地磁盘，收费。 #Windows #Mac #Paid
 
+### 文件备份
+
+- [Kopia](https://kopia.io/docs/getting-started/) 开源命令行（有 GUI）文件备份工具，可映射存储，可存储文件快照。 #Computer
+- [Duplicati](https://www.duplicati.com/) 开源命令行（有 WebUI）文件备份工具。 #Computer
+- [BorgBackup](https://www.borgbackup.org/) Linux 下的命令行文件备份工具，有 GUI [Vorta](https://vorta.borgbase.com/) #Mac #Linux
 
 ### 媒体
 
