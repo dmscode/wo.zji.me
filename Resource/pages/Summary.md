@@ -1,6 +1,6 @@
 ---
 created: 2023-06-05 22:38:04
-updated: 2023-09-14 14:49:40
+updated: 2023-09-16 09:45:00
 tags: 
 ---
 - [Notes](/Notes/)
@@ -25,16 +25,18 @@ tags:
 - Workflow
   - [文件同步流](/Workflow/FileSync.md)
   - [Android通知处理](/Workflow/Android通知处理规则.md)
-- Snippets
-  - [Dataview](/Snippets/Dataview/)
-    -  [Widgets](/Snippets/Dataview/Widgets/)
-      -  [Base](/Snippets/Dataview/Widgets/Base/)
-      - [Clock](/Snippets/Dataview/Widgets/Clock/)
-      - [Date](/Snippets/Dataview/Widgets/Date/)
-      - [Week](/Snippets/Dataview/Widgets/Week/)
-      - [Progress](/Snippets/Dataview/Widgets/Progress/)
-  -  [笔记统计](/Snippets/Dataview/笔记统计)
-  - [局部注入样式](/Snippets/Dataview/局部注入样式)
-  - [杂志起始页](/Snippets/Dataview/杂志起始页)
+-  [Dataview](/Dataview/)
+  -  [Widgets](/Dataview/Widgets/)
+    -  [Base](/Dataview/Widgets/Base/)
+    - [Clock](/Dataview/Widgets/Clock/)
+    - [Date](/Dataview/Widgets/Date/)
+    - [Week](/Dataview/Widgets/Week/)
+    - [Progress](/Dataview/Widgets/Progress/)
+  - [Snippets](/Dataview/Snippets/)
+    - [Timeline](/Dataview/Snippets/Timeline/)
+- Codes
+  -  [笔记统计](/Dataview/笔记统计)
+  - [局部注入样式](/Dataview/局部注入样式)
+  - [杂志起始页](/Dataview/杂志起始页)
 - [Changelog](/Resource/pages/Changelog.md)
 - <a href="https://afdian.net/a/daomishu" target="_blank" data-umami-event="afdian-nav">❤️ 老鼠爱发电</a>

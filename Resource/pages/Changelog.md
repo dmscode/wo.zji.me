@@ -1,12 +1,12 @@
 ---
 created: 2023-06-06 16:12:28
-updated: 2023-09-14 15:23:19
+updated: 2023-09-16 08:51:56
 tags: 
 ---
 ### 2023-09-14
 
 - 重新整理网站结构
-- 并入 [Widgets](/Snippets/Dataview/Widgets/) 项目
+- 并入 [Widgets](/Dataview/Widgets/) 项目
 - [遇见 Syncthing](/Notes/0011_遇见Syncthing.md)
 - 更新 [文件同步流](/Workflow/FileSync.md)
 
@@ -29,12 +29,12 @@ tags:
 
 ### 2023-07-09
 
-- [Dataview](/Snippets/Dataview/) 添加 [杂志起始页](/Snippets/Dataview/杂志起始页)
+- [Dataview](/Dataview/) 添加 [杂志起始页](/Dataview/杂志起始页)
 - [自由度](/Notes/0006_自由度.md)
 
 ### 2023-07-07
 
-- [Dataview](/Snippets/Dataview/) 添加 [局部注入样式](/Snippets/Dataview/局部注入样式)
+- [Dataview](/Dataview/) 添加 [局部注入样式](/Dataview/局部注入样式)
 
 ### 2023-07-06
 
