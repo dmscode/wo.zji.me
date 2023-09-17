@@ -33,8 +33,9 @@ const progressConfig = {
   Week: {
     getProgress: () => {
       const now = new Date()
-      const weekStart = new Date(now.getFullYear(), now.getMonth(), now.getDate()-now.getDay()+1)
-      const weekEnd = new Date(now.getFullYear(), now.getMonth(), now.getDate()+7-now.getDay()+1)
+      const day = (now.getDay()===0 ? 7 : now.getDay())-1
+      const weekStart = new Date(now.getFullYear(), now.getMonth(), now.getDate()-day)
+      const weekEnd = new Date(now.getFullYear(), now.getMonth(), now.getDate()+7-day)
       return (now.getTime()-weekStart.getTime())/(weekEnd.getTime()-weekStart.getTime())
     },
     interval: 6e4,
