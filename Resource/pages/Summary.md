@@ -1,6 +1,6 @@
 ---
 created: 2023-06-05 22:38:04
-updated: 2023-09-16 09:45:00
+updated: 2023-09-18 17:09:15
 tags: 
 ---
 - [Notes](/Notes/)
@@ -34,6 +34,7 @@ tags:
     - [Progress](/Dataview/Widgets/Progress/)
   - [Snippets](/Dataview/Snippets/)
     - [Timeline](/Dataview/Snippets/Timeline/)
+    - [Table](/Dataview/Snippets/Table/)
 - Codes
   -  [笔记统计](/Dataview/笔记统计)
   - [局部注入样式](/Dataview/局部注入样式)
