@@ -1,6 +1,6 @@
 ---
 created: 2023-06-19 15:24:44
-updated: 2023-09-14 14:58:19
+updated: 2023-09-19 10:54:27
 ---
 
 如果显示不正常，刷新一下页面就好了
@@ -10,7 +10,7 @@ flowchart LR
 subgraph NoteBook[Computer]
   subgraph NotObs[Obsidian]
     NotZJI[wo.zji.me]
-    NotWid[Widgets]
+    NotDV[Dataview]
   end
   NotShare[ShareFolder]
   NotEnpass[Enpass]
@@ -24,7 +24,7 @@ subgraph Nas[Nas]
   end
   subgraph Web[Web]
     subgraph NasZJI[wo.zji.me]
-      NasWid[Widgets]
+      NasDV[Dataview]
     end
   end
 end
@@ -54,7 +54,7 @@ PhoObs <--->|Syncthing| NasObs
 
 NotShare <--->|Syncthing| PhoShare
 
-NotZJI --->|"Syncthing (Not include Widgets)"| NasZJI
+NotZJI --->|"Syncthing (Not include Dataview)"| NasZJI
 
 NasZJI --->|AutoPushGit.js| GitZJI
 NasObs --->|AutoPushGit.js| GitObs
@@ -65,7 +65,7 @@ PhoEnpass <--->|Webdav| NasEnpass
 NasApps --->|GoodSync| OneApps
 NasApps --->|GoodSync| InfApps
 
-NotWid --->|Syncthing| NasWid
+NotDV --->|Syncthing| NasDV
 
 %% 节点样式
 style NoteBook fill:#c2ccd0,color:#FFF
