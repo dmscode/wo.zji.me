@@ -1,6 +1,6 @@
 ---
 created: 2023-06-05 22:38:04
-updated: 2023-09-18 17:09:15
+updated: 2023-09-21 21:07:15
 tags: 
 ---
 - [Notes](/Notes/)
@@ -32,6 +32,7 @@ tags:
     - [Date](/Dataview/Widgets/Date/)
     - [Week](/Dataview/Widgets/Week/)
     - [Progress](/Dataview/Widgets/Progress/)
+    - [Task](/Dataview/Widgets/Task/)
   - [Snippets](/Dataview/Snippets/)
     - [Timeline](/Dataview/Snippets/Timeline/)
     - [Table](/Dataview/Snippets/Table/)
