@@ -1,6 +1,6 @@
 ---
 created: 2023-09-21 20:13:27
-updated: 2023-09-25 21:46:30
+updated: 2023-09-26 14:23:03
 ---
 # 任务列表组件
 
@@ -35,12 +35,13 @@ dv.view('Task')
 
 ```js
 dv.view('Clock'， {
-    page: dv.pages(),
+    page: '',
     group: ['Past', 'Today', 'Todo', 'Future', 'Will', 'Maybe', 'Done']
 })
 ```
 
-- `page` 要检索的页面，默认所有页面，这里的书写格式参考 [dv.page](https://blacksmithgu.github.io/obsidian-dataview/api/code-reference/#dvpagepath) 和 [dv.pages](https://blacksmithgu.github.io/obsidian-dataview/api/code-reference/#dvpagessource) 的格式书写。
+- `page` 要检索的页面路径，会当做 [dv.page](https://blacksmithgu.github.io/obsidian-dataview/api/code-reference/#dvpagepath) 的参数传入；
+- `pages` 要检索的页面，会当做 [dv.pages](https://blacksmithgu.github.io/obsidian-dataview/api/code-reference/#dvpagessource) 的参数传入，这两个属性只需要设定一个，如果两个都设定，则取 `pages` 设定，都不设定则默认查询素有页面
 - `group` 要显示的组
     - `Past`：截止日期在今天之前的未完成任务；
     - `Today`：截止日期在今天的未完成任务；
