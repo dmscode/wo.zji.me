@@ -44,6 +44,10 @@ window.$docsify.markdown = {
         href = hashPath.replace(reg, '')+href.replace(/\.\.\//g, '')
       }
       return `<img src="${href}" alt="${title}">`
+    },
+    // 使 == 标记的内容高亮
+    text: function(text) {
+      return text.replace(/(?<!=)==([^=]+)==(?!=)/g, '<mark>$1</mark>')
     }
   }
 }

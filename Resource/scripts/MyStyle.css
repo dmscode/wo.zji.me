@@ -9,3 +9,18 @@
   display: inline-block;
   padding: 0 1rem;
 }
+
+mark {
+  background: rgba(255, 255, 0, .5);
+  /* text-decoration: underline wavy rgb(255, 124, 187) 3px; */
+}
+kbd {
+  display: inline-block;
+  background-color: #333338;
+  color: #E3E3EC;
+  border: 1px solid #E3E3EC;
+  border-radius: 6px;
+  padding: 0 .2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 0 0 #66666C;
+}

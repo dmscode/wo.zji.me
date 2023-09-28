@@ -1,8 +1,3 @@
----
-created: 2023-06-05 22:38:04
-updated: 2023-09-21 21:07:15
-tags: 
----
 - [Notes](/Notes/)
   - [我的笔记观](/Notes/0000_我的笔记观.md)
   - [我自己的规范](/Notes/0001_我自己的规范.md)
@@ -16,6 +11,7 @@ tags:
   - [碎碎念](/Notes/0009_碎碎念.md)
   - [小挂件](/Notes/0010_小挂件.md)
   - [遇见 Syncthing](/Notes/0011_遇见Syncthing.md)
+  - [Markdown 的误区](/Notes/0012_Markdown的误区.md)
 - Lists
   - [软件列表](/List/Software.md)
 - [Tools](/Tools/)
