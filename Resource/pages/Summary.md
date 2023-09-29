@@ -12,6 +12,7 @@
   - [小挂件](/Notes/0010_小挂件.md)
   - [遇见 Syncthing](/Notes/0011_遇见Syncthing.md)
   - [Markdown 的误区](/Notes/0012_Markdown的误区.md)
+  - [All in one](/Notes/0013_All_in_one.md)
 - Lists
   - [软件列表](/List/Software.md)
 - [Tools](/Tools/)

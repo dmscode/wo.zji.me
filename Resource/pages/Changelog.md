@@ -1,3 +1,7 @@
+### 2023-09-29
+
+- [All in one](/Notes/0013_All_in_one.md)
+
 ### 2023-09-28
 
 - [Markdown 的误区](/Notes/0012_Markdown的误区.md)
