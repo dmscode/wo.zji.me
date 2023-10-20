@@ -34,6 +34,11 @@
   - [Snippets](/Dataview/Snippets/)
     - [Timeline](/Dataview/Snippets/Timeline/)
     - [Table](/Dataview/Snippets/Table/)
+  - Tools
+    - [UUID](/Dataview/Tools/UUID/)
+- Templater
+  - [UUID](/Templater/UUID.md)
+  - [KBD](/Templater/KBD.md)
 - Codes
   -  [笔记统计](/Dataview/笔记统计)
   - [局部注入样式](/Dataview/局部注入样式)

@@ -1,3 +1,9 @@
+### 2023-10-20
+
+- [UUID](/Dataview/Tools/UUID/) - Dataview
+- [UUID](/Templater/UUID.md) - Templater
+- [KBD](/Templater/KBD.md) - Templater
+
 ### 2023-09-29
 
 - [All in one](/Notes/0013_All_in_one.md)

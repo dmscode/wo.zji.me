@@ -19,8 +19,13 @@ kbd {
   background-color: #333338;
   color: #E3E3EC;
   border: 1px solid #E3E3EC;
-  border-radius: 6px;
-  padding: 0 .2rem;
+  border-radius: 3px;
+  padding: 0 .5rem;
   font-weight: bold;
-  box-shadow: 0 4px 0 0 #66666C;
+  box-shadow: 0 4px 0 0 #E3E3EC;
+}
+kbd {
+  padding: 0 .5rem;
+  font-size: inherit !important;
+  line-height: inherit !important;
 }
