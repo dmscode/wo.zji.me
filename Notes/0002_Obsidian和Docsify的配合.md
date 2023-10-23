@@ -1,7 +1,8 @@
 ---
 created: 2023-06-09 00:34:04
-updated: 2023-10-20 15:21:10
+updated: 2023-10-23 17:59:24
 id: c5049a58-ed64-48fd-9984-a6ff25dde969
+published: true
 ---
 都是基于 Markdown，那就是可以一起用！反正笔记基于 Markdown，所以一切支持 Markdown 的工具都是我的笔记工具。合理~
 

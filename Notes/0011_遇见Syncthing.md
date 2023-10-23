@@ -1,7 +1,8 @@
 ---
 created: 2023-09-14 14:22:00
-updated: 2023-10-20 15:21:10
+updated: 2023-10-23 17:59:24
 id: 5dfcf2f4-b347-48f4-9742-930800bf2935
+published: true
 ---
 目前在用 Syncthing 实现 Obsidian 的同步，用的很舒服。详见 [文件同步流](/Workflow/FileSync.md)。
 

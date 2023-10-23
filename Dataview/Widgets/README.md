@@ -1,7 +1,8 @@
 ---
 created: 2023-09-08 09:41:53
-updated: 2023-10-20 15:21:09
+updated: 2023-10-23 18:00:24
 id: dca17ab7-2186-4c31-8d08-9c6b4f555eb0
+published: true
 ---
 
 # Obsidian sidebar widgets.

@@ -1,7 +1,8 @@
 ---
 created: 2023-10-20 16:58:03
-updated: 2023-10-20 17:11:44
+updated: 2023-10-23 17:59:24
 id: 9340c393-1fcd-42cc-8a13-57c9f2ea04e7
+published: true
 ---
 就是 Keyboard，键盘。HTML 里面有个标签 `kbd` 用来标记按键，比如：
 

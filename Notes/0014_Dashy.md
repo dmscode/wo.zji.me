@@ -1,7 +1,8 @@
 ---
 created: 2023-10-08 07:30:04
-updated: 2023-10-20 15:21:10
+updated: 2023-10-23 17:59:24
 id: 4f89c994-8704-4fe7-bc9a-f7c0786fab35
+published: true
 ---
 [Dashy](https://dashy.to/) 是一个开源的自部署导航网站，功能完善，部署也算简单，可以折腾一下。
 
